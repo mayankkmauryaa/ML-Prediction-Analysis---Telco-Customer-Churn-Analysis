@@ -7,7 +7,7 @@ export default function ModelMetrics() {
     useEffect(() => {
         const fetchMetrics = async () => {
             try {
-                const res = await fetch('http://localhost:5000/models');
+                const res = await fetch('https://ml-prediction-analysis-telco-customer.onrender.com/models');
                 const data = await res.json();
                 setMetrics(data);
             } catch (err) {

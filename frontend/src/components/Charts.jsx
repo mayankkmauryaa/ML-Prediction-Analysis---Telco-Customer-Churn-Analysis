@@ -18,7 +18,7 @@ export default function Charts() {
                         {files.map(file => (
                             <div key={file} className="bg-gray-800 p-2 rounded shadow-md flex flex-col items-center justify-center">
                                 <img
-                                    src={`http://localhost:5000/charts/${encodeURIComponent(file)}`}
+                                    src={`https://ml-prediction-analysis-telco-customer.onrender.com/charts/${encodeURIComponent(file)}`}
                                     alt={file}
                                     className="rounded w-full h-64 object-contain"
                                 />

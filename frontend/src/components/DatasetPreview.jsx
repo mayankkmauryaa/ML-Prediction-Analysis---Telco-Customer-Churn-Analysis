@@ -8,7 +8,7 @@ export default function DatasetPreview() {
     useEffect(() => {
         if (show && data.length === 0) {
             setLoading(true);
-            fetch('http://localhost:5000/dataset?rows=100')  // request first 100 rows
+            fetch('https://ml-prediction-analysis-telco-customer.onrender.com/dataset?rows=100')  // request first 100 rows
                 .then(res => res.json())
                 .then(d => setData(d))
                 .catch(err => console.error(err))
