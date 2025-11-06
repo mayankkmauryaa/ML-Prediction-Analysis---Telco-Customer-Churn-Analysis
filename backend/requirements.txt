@@ -4,4 +4,9 @@ joblib
 pandas
 scikit-learn
 numpy
-# optional: xgboost lightgbm catboost
+xgboost
+# optional: 
+xgboost 
+lightgbm 
+catboost
+gunicorn
