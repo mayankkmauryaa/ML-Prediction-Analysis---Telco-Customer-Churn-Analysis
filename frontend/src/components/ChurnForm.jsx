@@ -54,9 +54,11 @@ export default function ChurnForm() {
             setResult(data);
 
             // Add to log
-            setLog(prev => [
+            setLog(
+                // prev => 
+                    [
                 { input: { ...form }, output: data, timestamp: new Date().toLocaleTimeString() },
-                ...prev
+                // ...prev
             ]);
 
         } catch (err) {
